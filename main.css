@@ -28,6 +28,7 @@ html {
   --primary-800: #282566;
   --primary-900: #141233; */
 
+  /* primary */
   /* colors - my choice */
   --primary-100: #fef2d1;
   --primary-200: #fde5a3;
@@ -38,8 +39,18 @@ html {
   --primary-700: #95720f;
   --primary-800: #644c0a;
   --primary-900: #322605;
-  /* primary */
   /* grey */
+  --grey-50: #f8fafc;
+  --grey-100: #f1f5f9;
+  --grey-200: #e2e8f0;
+  --grey-300: #cbd5e1;
+  --grey-400: #94a3b8;
+  --grey-500: #64748b;
+  --grey-600: #475569;
+  --grey-700: #334155;
+  --grey-800: #1e293b;
+  --grey-900: #0f172a;
+  /* remaining colors */
   --black: #222;
   --white: #fff;
   --red-light: #f8d7da;
@@ -52,14 +63,16 @@ html {
   --bodyFont: 'Karla', sans-serif;
   --smallText: 0.7em;
   /* rest of the vars */
+  --backgroundColor: var(--grey-50);
+  --textColor: var(--grey-900);
 }
 
 body {
-  background: white;
+  background: var(--backgroundColor);
   font-family: var(--bodyFont);
   font-weight: 400;
   line-height: 1.75;
-  color: #000000;
+  color: var(--textColor);
 }
 
 p {
