@@ -144,3 +144,18 @@ ul {
   list-style-type: none;
   padding: 0;
 }
+.container {
+  width: 50vw;
+  border: 5px solid var(--primary-500);
+  border-radius: var(--borderRadius);
+  max-width: var(--max-width);
+}
+.img {
+  width: 100%;
+  /* if height is set, object will distort if no object-fit: cover */
+  /* height: 300px; */
+  /* without display block you will have an empty space under the image */
+  display: block;
+  object-fit: cover;
+  border-radius: var(--borderRadius);
+}
